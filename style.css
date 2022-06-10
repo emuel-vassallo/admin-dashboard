@@ -190,7 +190,7 @@ header {
 main {
   display: grid;
   grid-area: main;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 3fr 1fr;
   background-color: var(--main-background-color);
   padding: 32px;
@@ -218,15 +218,24 @@ main > div > div {
 
 .projects > div {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: var(--card-background-color);
   border-radius: 16px;
   padding: 32px;
+}
+
+.project-card-icons {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
 }
 
 .project-card > div:first-child > p:first-child {
@@ -237,12 +246,6 @@ main > div > div {
 
 .project-card > div:first-child > p:nth-child(2) {
   margin: 8px 0 32px 0;
-}
-
-.project-card-icons {
-  display: flex; 
-  gap: 24px;
-  justify-content: flex-end;
 }
 
 /* Announcements */
