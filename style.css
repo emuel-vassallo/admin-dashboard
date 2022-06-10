@@ -4,7 +4,7 @@
   --header-background-color: #ffffff;
   --main-background-color: #e2e8f0;
   --search-background-color: #e2e8f0;
-  --announcements-background-color: #ffffff;
+  --card-background-color: #ffffff;
 }
 
 body {
@@ -175,12 +175,14 @@ header {
   width: 54px;
   height: 54px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .user-profile-picture {
   width: 76px;
   height: 76px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 /* -- Main -- */
@@ -190,19 +192,29 @@ main {
   grid-area: main;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    'projects announcements'
+    'projects trending';
   background-color: var(--main-background-color);
   padding: 32px;
   gap: 32px;
 }
 
-.projects,
-.announcements {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content 1fr;
+main > div > p:first-child {
+  margin: 0 0 16px 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+main > div > div {
+  border-radius: 16px;
 }
 
 /* Projects */
+
+.projects {
+  grid-area: projects;
+}
 
 .projects-container {
   display: grid;
@@ -213,18 +225,56 @@ main {
 
 .project-card {
   height: 240px;
+  background: var(--card-background-color);
 }
 
 /* Announcements */
+
+.announcements {
+  grid-area: announcements;
+}
 
 .announcements-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  background: var(--announcements-background-color);
+  background: var(--card-background-color);
   padding: 32px;
 }
 
 .announcements-container div:not(:last-child) {
   border-bottom: 1px solid black;
+}
+
+/* Trending */
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  grid-area: trending;
+  border-radius: 16px;
+}
+
+.trending > div {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-background-color);
+  padding: 32px;
+  gap: 26px;
+}
+
+.trending > div > div {
+  display: flex;
+  gap: 16px;
+}
+
+.trending > div > div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.trending > div div div p {
+  margin: 0;
 }
