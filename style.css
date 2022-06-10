@@ -5,6 +5,8 @@
   --main-background-color: #e2e8f0;
   --search-background-color: #e2e8f0;
   --card-background-color: #ffffff;
+  --card-grey-font-color: #727272;
+  --annoucements-separator-color: #e1e1e1;
 }
 
 body {
@@ -256,21 +258,33 @@ main > div > div {
 }
 
 .announcements > div {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   background: var(--card-background-color);
   padding: 32px;
-  gap: 16px;
 }
 
-.announcements > div div:not(:last-child) {
-  border-bottom: 1px solid black;
+.announcements > div > div:not(:first-child) > p:first-child {
+  border-top: 2px solid var(--annoucements-separator-color);
+  padding: 16px 6px 0 6px;
 }
-
+  
 .announcements > div > div > p:first-child {
   font-weight: 700;
   margin: 0;
+  padding: 0 6px 0 6px;
+}
+
+.announcements > div > div > p:nth-child(2) {
+  font-size: 0.8rem;
+  padding: 0 8px;
+  color: var(--card-grey-font-color);
+  margin: 4px 0 0 0;
+}
+
+.announcements > div > div:not(:last-child) > p:nth-child(2) {
+  margin: 4px 0 0 0;
 }
 
 /* Trending */
