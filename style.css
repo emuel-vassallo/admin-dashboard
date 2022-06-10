@@ -1,5 +1,6 @@
 :root {
   --sidebar-background-color: #1992d4;
+  --sidebar-font-color: #ffffff;
   --header-background-color: #ffffff;
   --main-background-color: #e2e8f0;
 }
@@ -14,28 +15,61 @@ body {
   margin: 0;
 }
 
+/* Sidebar */
+
 .sidebar {
   display: grid;
   grid-area: sidebar;
+  grid-template-rows: 76px 1fr;
   background-color: var(--sidebar-background-color);
 }
 
 .logo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: start;
   align-items: center;
 }
 
-.sidebar ul li {
-  list-style-type: none;
+.logo a {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  padding: 0 32px;
+  justify-items: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--sidebar-font-color);
+  font-size: 1.2rem;
 }
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.logo a img {
+  width: 36px;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar-link {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  padding: 0 32px;
+  color: var(--sidebar-font-color);
+  font-size: 1rem;
+}
+
+/* Header */
 
 header {
   display: grid;
   grid-area: header;
   background-color: var(--header-background-color);
 }
+
+/* Main */
 
 main {
   display: grid;
