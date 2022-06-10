@@ -4,6 +4,7 @@
   --header-background-color: #ffffff;
   --main-background-color: #e2e8f0;
   --search-background-color: #e2e8f0;
+  --announcements-background-color: #ffffff;
 }
 
 body {
@@ -187,15 +188,21 @@ header {
 main {
   display: grid;
   grid-area: main;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 3fr 1fr;
   background-color: var(--main-background-color);
   padding: 32px;
+  gap: 32px;
 }
 
-.projects {
+.projects,
+.announcements {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
 }
+
+/* Projects */
 
 .projects-container {
   display: grid;
@@ -206,4 +213,18 @@ main {
 
 .project-card {
   height: 240px;
+}
+
+/* Announcements */
+
+.announcements-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  background: var(--announcements-background-color);
+  padding: 32px;
+}
+
+.announcements-container div:not(:last-child) {
+  border-bottom: 1px solid black;
 }
