@@ -188,4 +188,22 @@ main {
   display: grid;
   grid-area: main;
   background-color: var(--main-background-color);
+  padding: 32px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  height: 240px;
 }
