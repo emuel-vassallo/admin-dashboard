@@ -15,7 +15,7 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr;
   grid-template-areas:
     'sidebar header'
@@ -215,7 +215,7 @@ main > div > div {
 
 .project-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 24px;
   flex: 1;
 }
