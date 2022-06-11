@@ -262,7 +262,6 @@ main {
 }
 
 .project-card:hover {
-  cursor: pointer;
   outline: 1px solid var(--annoucements-separator-color);
   transition: 0.15s ease-in-out;
 }
@@ -286,6 +285,11 @@ main {
 
 .project-card-icons .material-symbols-rounded {
   font-size: 1.5rem;
+}
+
+.project-card-icons .material-symbols-rounded:hover {
+  cursor: pointer;
+  color: var(--card-grey-font-color);
 }
 
 /* Announcements */
