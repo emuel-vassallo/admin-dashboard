@@ -1,12 +1,17 @@
 :root {
-  --sidebar-background-color: #1992d4;
-  --sidebar-font-color: #ffffff;
+  --sidebar-background-color: #ffffff;
+  --black-font-color: #000000;
+  --light-grey-color: #dbdbdb;
   --header-background-color: #ffffff;
-  --main-background-color: #e2e8f0;
-  --search-background-color: #e2e8f0;
+  --outline-separator: 2px solid #ececec;
+  --main-background-color: #FAF8F4;
+  --button-background-color: #e4e1d5;
+  --search-background-color: #ffffff;
   --card-background-color: #ffffff;
-  --card-grey-font-color: #545454;
+  --card-grey-font-color: #656565;
   --annoucements-separator-color: #e1e1e1;
+  --card-border-radius: 12px;
+  --card-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 html {
@@ -14,6 +19,8 @@ html {
 }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr;
@@ -21,8 +28,6 @@ body {
     'sidebar header'
     'sidebar main';
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* -- Sidebar --*/
@@ -33,6 +38,7 @@ body {
   grid-area: sidebar;
   background-color: var(--sidebar-background-color);
   font-weight: 700;
+  border-right: var(--outline-separator);
 }
 
 .sidebar a {
@@ -47,7 +53,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0 32px;
-  color: var(--sidebar-font-color);
+  color: var(--black-font-color);
   font-size: 1.1rem;
 }
 
@@ -76,6 +82,7 @@ header {
   background-color: var(--header-background-color);
   padding: 18px 42px;
   gap: 28px 16px;
+  border-bottom: var(--outline-separator);
 }
 
 /* Search */
@@ -91,10 +98,11 @@ header {
 
 .search input {
   background: var(--search-background-color);
-  border: none;
-  height: 36px;
-  border-radius: 16px;
-  padding: 8px;
+  border: 1px solid var(--light-grey-color);
+  height: 42px;
+  border-radius: var(--card-border-radius);
+  padding: 16px;
+  font-size: 1rem;
 }
 
 /* Notification area */
@@ -125,7 +133,7 @@ header {
 .greeting {
   display: grid;
   grid-area: greeting;
-  grid-template-columns: 94px 4fr;
+  grid-template-columns: 100px 4fr;
   grid-template-rows: 1fr;
   align-items: center;
   font-weight: 700;
@@ -136,12 +144,12 @@ header {
 }
 
 .greeting p:first-child {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0 0 4px 0;
 }
 
 .greeting p:nth-child(2) {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 /* Buttons */
@@ -157,11 +165,11 @@ header {
 
 .buttons button {
   all: unset;
-  background: var(--sidebar-background-color);
-  color: #ffffff;
+  background: var(--button-background-color);
+  color: var(--black-font-color);
   text-align: center;
-  border-radius: 21px;
-  height: 38px;
+  border-radius: var(--card-border-radius);
+  height: 42px;
   font-weight: bold;
   font-size: 0.95rem;
 }
@@ -176,8 +184,8 @@ header {
 }
 
 .user-profile-picture {
-  width: 80px;
-  height: 80px;
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -198,10 +206,6 @@ main {
   margin: 0 0 16px 0;
   font-weight: 600;
   font-size: 1.4rem;
-}
-
-main > div > div {
-  border-radius: 16px;
 }
 
 /* Projects */
@@ -225,7 +229,8 @@ main > div > div {
   flex-direction: column;
   justify-content: space-between;
   background: var(--card-background-color);
-  border-radius: 16px;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
   padding: 32px;
 }
 
@@ -260,6 +265,8 @@ main > div > div {
   flex-direction: column;
   gap: 16px;
   background: var(--card-background-color);
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
   padding: 32px;
   flex: 1;
 }
@@ -299,6 +306,8 @@ main > div > div {
   display: flex;
   flex-direction: column;
   background: var(--card-background-color);
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
   padding: 32px;
   gap: 26px;
   flex: 1;
