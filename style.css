@@ -258,6 +258,13 @@ main {
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-box-shadow);
   padding: 32px;
+  outline: 1px solid var(--card-background-color);
+}
+
+.project-card:hover {
+  cursor: pointer;
+  outline: 1px solid var(--annoucements-separator-color);
+  transition: 0.15s ease-in-out;
 }
 
 .project-card > div:first-child > p:first-child {
