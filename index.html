@@ -1,260 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Admin Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" defer />
+  </head>
 
-<head>
-  <title>Admin Dashboard</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="#" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet" />
-  <link href="style.css" rel="stylesheet" defer />
-</head>
-
-<body>
-  <div class="sidebar">
-    <div class="logo">
-      <a class="sidebar-link" href="#">
-        <span class="material-symbols-rounded"> dashboard </span>
-        <p>Dashboard</p>
-      </a>
-    </div>
-    <div class="menu">
-      <ul>
-        <a href="#">
-          <li class="sidebar-link selected">
-            <span class="material-symbols-rounded"> home </span>
-            <p>Home</p>
-          </li>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <a class="sidebar-link" href="#">
+          <span class="material-symbols-rounded"> dashboard </span>
+          <p>Dashboard</p>
         </a>
-        <a href="#">
-          <li class="sidebar-link">
-            <span class="material-symbols-rounded"> badge </span>
-            <p>Profile</p>
-          </li>
-        </a>
-        <a href="#">
-          <li class="sidebar-link">
-            <span class="material-symbols-rounded"> message </span>
-            <p>Messages</p>
-          </li>
-        </a>
-        <a href="#">
-          <li class="sidebar-link">
-            <span class="material-symbols-rounded"> history </span>
-            <p>History</p>
-          </li>
-        </a>
-        <a href="#">
-          <li class="sidebar-link">
-            <span class="material-symbols-rounded"> task </span>
-            <p>Tasks</p>
-          </li>
-        </a>
-        <a href="#">
-          <li class="sidebar-link">
-            <span class="material-symbols-rounded"> people </span>
-            <p>Communities</p>
-          </li>
-        </a>
-        <br />
-        <a href="#">
-          <li class="sidebar-link">
-            <span class="material-symbols-rounded"> settings </span>
-            <p>Settings</p>
-          </li>
-        </a>
-        <a href="#">
-          <li class="sidebar-link">
-            <span class="material-symbols-rounded"> support </span>
-            <p>Support</p>
-          </li>
-        </a>
-        <a href="#">
-          <li class="sidebar-link">
-            <span class="material-symbols-rounded"> security </span>
-            <p>Privacy</p>
-          </li>
-        </a>
-      </ul>
-    </div>
-  </div>
-  <header>
-    <div class="search">
-      <span class="material-symbols-rounded"> search </span>
-      <input type="search" placeholder="Search for projects" />
-    </div>
-    <div class="notification-area">
-      <span class="material-symbols-rounded"> notifications_active </span>
-      <img class="profile-picture" src="images/profile-pictures/profile-pic1.png" alt="profile picture" />
-      <p>Emuel Vassallo</p>
-    </div>
-    <div class="greeting">
-      <img class="user-profile-picture" src="images/profile-pictures/profile-pic1.png" alt="profile picture" />
-      <div>
-        <p>Hi there,</p>
-        <p>Emuel Vassallo (@emuel)</p>
+      </div>
+      <div class="menu">
+        <ul>
+          <a href="#">
+            <li class="sidebar-link selected">
+              <span class="material-symbols-rounded"> home </span>
+              <p>Home</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="sidebar-link">
+              <span class="material-symbols-rounded"> badge </span>
+              <p>Profile</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="sidebar-link">
+              <span class="material-symbols-rounded"> message </span>
+              <p>Messages</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="sidebar-link">
+              <span class="material-symbols-rounded"> history </span>
+              <p>History</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="sidebar-link">
+              <span class="material-symbols-rounded"> task </span>
+              <p>Tasks</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="sidebar-link">
+              <span class="material-symbols-rounded"> people </span>
+              <p>Communities</p>
+            </li>
+          </a>
+          <br />
+          <a href="#">
+            <li class="sidebar-link">
+              <span class="material-symbols-rounded"> settings </span>
+              <p>Settings</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="sidebar-link">
+              <span class="material-symbols-rounded"> support </span>
+              <p>Support</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="sidebar-link">
+              <span class="material-symbols-rounded"> security </span>
+              <p>Privacy</p>
+            </li>
+          </a>
+        </ul>
       </div>
     </div>
-    <div class="buttons">
-      <button>New</button>
-      <button>Upload</button>
-      <button>Share</button>
-    </div>
-  </header>
-  <main>
-    <div class="projects">
-      <p class="section-title">Your Projects</p>
-      <div class="project-card-container">
-        <div class="project-card">
-          <div>
-            <p>Super Cool Project</p>
-            <p>
-              Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
-              nibh erat, id facilsis felis accusman nec.
-            </p>
-          </div>
-          <div class="project-card-icons">
-            <span class="material-symbols-rounded"> bookmark </span>
-            <span class="material-symbols-rounded"> delete </span>
-            <span class="material-symbols-rounded"> share </span>
-          </div>
-        </div>
-        <div class="project-card">
-          <div>
-            <p>Less Cool Project</p>
-            <p>
-              Nullam condimentum ipsum ut lectus vehicula consectetur.
-              Quiseque sed dolor tincidunt, consectetur sapien et, facilsis
-              dolor. Duis sem purus, dignissim ut sapien in, varius
-              pellentesque lacus.
-            </p>
-          </div>
-          <div class="project-card-icons">
-            <span class="material-symbols-rounded"> bookmark </span>
-            <span class="material-symbols-rounded"> delete </span>
-            <span class="material-symbols-rounded"> share </span>
-          </div>
-        </div>
-        <div class="project-card">
-          <div>
-            <p>Impossible App</p>
-            <p>
-              In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
-              placerat velit sagittis id.
-            </p>
-          </div>
-          <div class="project-card-icons">
-            <span class="material-symbols-rounded"> bookmark </span>
-            <span class="material-symbols-rounded"> delete </span>
-            <span class="material-symbols-rounded"> share </span>
-          </div>
-        </div>
-        <div class="project-card">
-          <div>
-            <p>Easy Peasy App</p>
-            <p>
-              Etiam cursus eros ac efficiur fringilla. Vestibulum dignissim
-              urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
-              commondo, ac bibendum magna tincidunt.
-            </p>
-          </div>
-          <div class="project-card-icons">
-            <span class="material-symbols-rounded"> bookmark </span>
-            <span class="material-symbols-rounded"> delete </span>
-            <span class="material-symbols-rounded"> share </span>
-          </div>
-        </div>
-        <div class="project-card">
-          <div>
-            <p>Ad Blocker</p>
-            <p>
-              Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus
-              vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
-            </p>
-          </div>
-          <div class="project-card-icons">
-            <span class="material-symbols-rounded"> bookmark </span>
-            <span class="material-symbols-rounded"> delete </span>
-            <span class="material-symbols-rounded"> share </span>
-          </div>
-        </div>
-        <div class="project-card">
-          <div>
-            <p>Money Maker</p>
-            <p>
-              Prasent convallis, libero quis congue elementum, nunc ante
-              faucibus sapien, ac scelerisque tortor purus sit amet ex.
-              Pellentesque mollis nec sem vel aliquam.
-            </p>
-          </div>
-          <div class="project-card-icons">
-            <span class="material-symbols-rounded"> bookmark </span>
-            <span class="material-symbols-rounded"> delete </span>
-            <span class="material-symbols-rounded"> share </span>
-          </div>
+    <header>
+      <div class="search">
+        <span class="material-symbols-rounded"> search </span>
+        <input type="search" placeholder="Search for projects" />
+      </div>
+      <div class="notification-area">
+        <span class="material-symbols-rounded"> notifications_active </span>
+        <img
+          class="profile-picture"
+          src="images/profile-pictures/profile-pic1.png"
+          alt="profile picture"
+        />
+        <p>Emuel Vassallo</p>
+      </div>
+      <div class="greeting">
+        <img
+          class="user-profile-picture"
+          src="images/profile-pictures/profile-pic1.png"
+          alt="profile picture"
+        />
+        <div>
+          <p>Hi there,</p>
+          <p>Emuel Vassallo (@emuel)</p>
         </div>
       </div>
-    </div>
-    <div class="announcements">
-      <p class="section-title">Announcements</p>
-      <div>
-        <div>
-          <p>Site Maintenance</p>
-          <p>
-            Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
-            Donec hendrerit sodales congue...
-          </p>
-        </div>
-        <div>
-          <p>Community Share Day</p>
-          <p>
-            Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
-            dictum accumsan porttitor...
-          </p>
-        </div>
-        <div>
-          <p>Updated Privacy Policy</p>
-          <p>
-            Phasellus efficitur nisi eget elit consectetur, eget condimentum
-            ante auctor. Cras frigilla sagittis sem in mattis...
-          </p>
-        </div>
+      <div class="buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
       </div>
-    </div>
-    <div class="trending">
-      <p class="section-title">Trending</p>
-      <div>
-        <div>
-          <img class="profile-picture" src="images/profile-pictures/profile-pic2.png" alt="profile picture 1" />
-          <div>
-            <p>@tegan</p>
-            <p>World Peace Builder</p>
+    </header>
+    <main>
+      <div class="projects">
+        <p class="section-title">Your Projects</p>
+        <div class="project-card-container">
+          <div class="project-card">
+            <div>
+              <p>Super Cool Project</p>
+              <p>
+                Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                nibh erat, id facilsis felis accusman nec.
+              </p>
+            </div>
+            <div class="project-card-icons">
+              <span class="material-symbols-rounded"> bookmark </span>
+              <span class="material-symbols-rounded"> delete </span>
+              <span class="material-symbols-rounded"> share </span>
+            </div>
           </div>
-        </div>
-        <div>
-          <img class="profile-picture" src="images/profile-pictures/profile-pic1.png" alt="profile picture 2" />
-          <div>
-            <p>@emuel</p>
-            <p>Super Cool Project</p>
+          <div class="project-card">
+            <div>
+              <p>Less Cool Project</p>
+              <p>
+                Nullam condimentum ipsum ut lectus vehicula consectetur.
+                Quiseque sed dolor tincidunt, consectetur sapien et, facilsis
+                dolor. Duis sem purus, dignissim ut sapien in, varius
+                pellentesque lacus.
+              </p>
+            </div>
+            <div class="project-card-icons">
+              <span class="material-symbols-rounded"> bookmark </span>
+              <span class="material-symbols-rounded"> delete </span>
+              <span class="material-symbols-rounded"> share </span>
+            </div>
           </div>
-        </div>
-        <div>
-          <img class="profile-picture" src="images/profile-pictures/profile-pic4.png" alt="profile picture 3" />
-          <div>
-            <p>@kendall</p>
-            <p>Life Changing App</p>
+          <div class="project-card">
+            <div>
+              <p>Impossible App</p>
+              <p>
+                In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+                placerat velit sagittis id.
+              </p>
+            </div>
+            <div class="project-card-icons">
+              <span class="material-symbols-rounded"> bookmark </span>
+              <span class="material-symbols-rounded"> delete </span>
+              <span class="material-symbols-rounded"> share </span>
+            </div>
           </div>
-        </div>
-        <div>
-          <img class="profile-picture" src="images/profile-pictures/profile-pic5.png" alt="profile picture 4" />
-          <div>
-            <p>@alex</p>
-            <p>No Traffic Maker</p>
+          <div class="project-card">
+            <div>
+              <p>Easy Peasy App</p>
+              <p>
+                Etiam cursus eros ac efficiur fringilla. Vestibulum dignissim
+                urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
+                commondo, ac bibendum magna tincidunt.
+              </p>
+            </div>
+            <div class="project-card-icons">
+              <span class="material-symbols-rounded"> bookmark </span>
+              <span class="material-symbols-rounded"> delete </span>
+              <span class="material-symbols-rounded"> share </span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>Ad Blocker</p>
+              <p>
+                Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus
+                vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
+              </p>
+            </div>
+            <div class="project-card-icons">
+              <span class="material-symbols-rounded"> bookmark </span>
+              <span class="material-symbols-rounded"> delete </span>
+              <span class="material-symbols-rounded"> share </span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>Money Maker</p>
+              <p>
+                Prasent convallis, libero quis congue elementum, nunc ante
+                faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                Pellentesque mollis nec sem vel aliquam.
+              </p>
+            </div>
+            <div class="project-card-icons">
+              <span class="material-symbols-rounded"> bookmark </span>
+              <span class="material-symbols-rounded"> delete </span>
+              <span class="material-symbols-rounded"> share </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
-
+      <div class="announcements">
+        <p class="section-title">Announcements</p>
+        <div>
+          <div>
+            <p>Site Maintenance</p>
+            <p>
+              Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
+              Donec hendrerit sodales congue...
+            </p>
+          </div>
+          <div>
+            <p>Community Share Day</p>
+            <p>
+              Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
+              dictum accumsan porttitor...
+            </p>
+          </div>
+          <div>
+            <p>Updated Privacy Policy</p>
+            <p>
+              Phasellus efficitur nisi eget elit consectetur, eget condimentum
+              ante auctor. Cras frigilla sagittis sem in mattis...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trending">
+        <p class="section-title">Trending</p>
+        <div>
+          <div>
+            <img
+              class="profile-picture"
+              src="images/profile-pictures/profile-pic2.png"
+              alt="profile picture 1"
+            />
+            <div>
+              <p>@tegan</p>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
+          <div>
+            <img
+              class="profile-picture"
+              src="images/profile-pictures/profile-pic1.png"
+              alt="profile picture 2"
+            />
+            <div>
+              <p>@emuel</p>
+              <p>Super Cool Project</p>
+            </div>
+          </div>
+          <div>
+            <img
+              class="profile-picture"
+              src="images/profile-pictures/profile-pic4.png"
+              alt="profile picture 3"
+            />
+            <div>
+              <p>@kendall</p>
+              <p>Life Changing App</p>
+            </div>
+          </div>
+          <div>
+            <img
+              class="profile-picture"
+              src="images/profile-pictures/profile-pic5.png"
+              alt="profile picture 4"
+            />
+            <div>
+              <p>@alex</p>
+              <p>No Traffic Maker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <p>
+          Made with ❤️ by
+          <a href="https://github.com/emuel-vassallo/" target="_blank">
+            Emuel Vassallo
+          </a>
+        </p>
+      </div>
+    </main>
+  </body>
 </html>

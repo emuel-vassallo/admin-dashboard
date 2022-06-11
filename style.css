@@ -97,6 +97,18 @@ body {
   background: var(--sidebar-link-selected-hover-background);
 }
 
+/* Credit */
+
+.credit {
+  display: flex;
+  justify-content: center;
+}
+
+.credit > p > a {
+  color: var(--card-grey-font-color);
+  text-decoration: none;
+}
+
 /* -- Header -- */
 
 header {
