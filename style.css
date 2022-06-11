@@ -1,10 +1,11 @@
 :root {
   --sidebar-background-color: #ffffff;
+  --sidebar-font-color: #212121;
   --black-font-color: #000000;
   --light-grey-color: #dbdbdb;
   --header-background-color: #ffffff;
-  --outline-separator: 2px solid #ececec;
-  --main-background-color: #FAF8F4;
+  --outline-separator: 2px solid #eae1e2;
+  --main-background-color: #faf8f4;
   --button-background-color: #e4e1d5;
   --search-background-color: #ffffff;
   --card-background-color: #ffffff;
@@ -37,7 +38,6 @@ body {
   flex-direction: column;
   grid-area: sidebar;
   background-color: var(--sidebar-background-color);
-  font-weight: 700;
   border-right: var(--outline-separator);
 }
 
@@ -52,21 +52,27 @@ body {
 .sidebar-link {
   display: flex;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 56px;
   color: var(--black-font-color);
+}
+
+.sidebar-link > p {
+  color: var(--sidebar-font-color);
   font-size: 1.1rem;
 }
 
-.material-icons {
-  padding: 0 12px 0 0;
+.logo .sidebar-link p {
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
-.logo .sidebar-link {
-  font-size: 1.7rem;
+.sidebar .material-symbols-rounded {
+  padding: 0 24px 0 0;
+  scale: 1.3;
 }
 
-.logo .material-icons {
-  scale: 1.5;
+.logo .material-symbols-rounded {
+  scale: 1.8;
 }
 
 /* -- Header -- */
