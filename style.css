@@ -223,6 +223,12 @@ header {
   flex-shrink: 0;
 }
 
+.profile-picture:hover,
+.user-profile-picture:hover {
+  cursor: pointer;
+  filter: brightness(97.5%);
+}
+
 /* -- Main -- */
 
 main {
@@ -294,7 +300,8 @@ main {
   font-size: 1.5rem;
 }
 
-.project-card-icons .material-symbols-rounded:hover {
+.project-card-icons .material-symbols-rounded:hover,
+.notification-area .material-symbols-rounded:hover {
   cursor: pointer;
   color: var(--card-grey-font-color);
 }
