@@ -10,6 +10,7 @@
   --outline-separator: 1px solid #eaeae1;
   --main-background-color: #faf8f4;
   --button-background-color: #e4e1d5;
+  --button-background-color-hover: #d7d2c0;
   --search-background-color: #ffffff;
   --card-background-color: #ffffff;
   --card-grey-font-color: #656565;
@@ -198,6 +199,12 @@ header {
   height: 42px;
   font-weight: bold;
   font-size: 0.95rem;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background: var(--button-background-color-hover);
+  transition: all 0.09s ease-in-out;
 }
 
 /* Profile Pictures */
