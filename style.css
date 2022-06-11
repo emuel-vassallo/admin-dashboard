@@ -16,7 +16,7 @@ html {
 body {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
     'sidebar header'
     'sidebar main';
@@ -28,35 +28,15 @@ body {
 /* -- Sidebar --*/
 
 .sidebar {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-area: sidebar;
-  grid-template-rows: 76px 1fr;
   background-color: var(--sidebar-background-color);
-  font-weight: bold;
-}
-
-.logo {
-  display: grid;
-  align-items: center;
-}
-
-.logo a {
-  display: grid;
-  grid-template-columns: 32px 1fr;
-  padding: 0 32px;
-  justify-items: center;
-  align-items: center;
-  text-decoration: none;
-  color: var(--sidebar-font-color);
-  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .sidebar a {
   text-decoration: none;
-}
-
-.logo a img {
-  width: 36px;
 }
 
 .sidebar ul {
@@ -64,12 +44,23 @@ body {
 }
 
 .sidebar-link {
-  display: grid;
-  grid-template-columns: 32px 1fr;
+  display: flex;
   align-items: center;
   padding: 0 32px;
   color: var(--sidebar-font-color);
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+.material-icons {
+  padding: 0 12px 0 0;
+}
+
+.logo .sidebar-link {
+  font-size: 1.7rem;
+}
+
+.logo .material-icons {
+  scale: 1.5;
 }
 
 /* -- Header -- */
