@@ -1,5 +1,6 @@
 :root {
   --sidebar-background-color: #ffffff;
+  --sidebar-link-hover-background-color: #eae8e3;
   --sidebar-font-color: #212121;
   --black-font-color: #000000;
   --light-grey-color: #dbdbdb;
@@ -56,6 +57,14 @@ body {
   color: var(--black-font-color);
 }
 
+.sidebar-link:hover {
+  background: var(--sidebar-link-hover-background-color);
+}
+
+.logo .sidebar-link:hover {
+  background: none;
+}
+
 .sidebar-link > p {
   color: var(--sidebar-font-color);
   font-size: 1.1rem;
@@ -63,17 +72,17 @@ body {
 
 .sidebar .material-symbols-rounded {
   padding: 0 24px 0 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .logo .sidebar-link p {
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .logo .material-symbols-rounded {
   padding: 0 14px 0 0;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
 }
 
 /* -- Header -- */
