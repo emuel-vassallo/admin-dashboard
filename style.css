@@ -4,7 +4,7 @@
   --black-font-color: #000000;
   --light-grey-color: #dbdbdb;
   --header-background-color: #ffffff;
-  --outline-separator: 2px solid #eae1e2;
+  --outline-separator: 1px solid #eaeae1;
   --main-background-color: #faf8f4;
   --button-background-color: #e4e1d5;
   --search-background-color: #ffffff;
@@ -61,18 +61,19 @@ body {
   font-size: 1.1rem;
 }
 
+.sidebar .material-symbols-rounded {
+  padding: 0 24px 0 0;
+  font-size: 1.6rem;
+}
+
 .logo .sidebar-link p {
   font-size: 1.8rem;
   font-weight: 800;
 }
 
-.sidebar .material-symbols-rounded {
-  padding: 0 24px 0 0;
-  scale: 1.3;
-}
-
 .logo .material-symbols-rounded {
-  scale: 1.8;
+  padding: 0 14px 0 0;
+  font-size: 2.1rem;
 }
 
 /* -- Header -- */
@@ -255,6 +256,10 @@ main {
   display: flex;
   gap: 24px;
   justify-content: flex-end;
+}
+
+.project-card-icons .material-symbols-rounded {
+  font-size: 1.5rem;
 }
 
 /* Announcements */
