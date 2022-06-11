@@ -1,9 +1,11 @@
 :root {
-  --sidebar-background-color: #ffffff;
-  --sidebar-link-hover-background-color: #eae8e3;
-  --sidebar-font-color: #212121;
   --black-font-color: #000000;
   --light-grey-color: #dbdbdb;
+  --sidebar-font-color: #212121;
+  --sidebar-background-color: #ffffff;
+  --sidebar-link-hover-background-color: #f7f6f3;
+  --sidebar-link-selected-background: #f1f0e9;
+  --sidebar-link-selected-hover-background: #efede6;
   --header-background-color: #ffffff;
   --outline-separator: 1px solid #eaeae1;
   --main-background-color: #faf8f4;
@@ -83,6 +85,14 @@ body {
 .logo .material-symbols-rounded {
   padding: 0 14px 0 0;
   font-size: 2.3rem;
+}
+
+.selected {
+  background: var(--sidebar-link-selected-background);
+}
+
+.selected:hover {
+  background: var(--sidebar-link-selected-hover-background);
 }
 
 /* -- Header -- */
