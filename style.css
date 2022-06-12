@@ -29,10 +29,11 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr auto;
   grid-template-areas:
     'sidebar header'
-    'sidebar main';
+    'sidebar main'
+    'footer footer';
   margin: 0;
 }
 
@@ -97,15 +98,18 @@ body {
   background: var(--sidebar-link-selected-hover-background);
 }
 
-/* Credit */
+/* Footer */
 
-.credit {
+footer {
+  grid-area: footer;
+  background: var(--sidebar-background-color);
   display: flex;
   justify-content: center;
-  height: 25px;
+  width: 100%;
+  border-top: var(--outline-separator);
 }
 
-.credit > p > a {
+footer > p > a {
   color: var(--card-grey-font-color);
   text-decoration: none;
 }
@@ -115,7 +119,7 @@ body {
 header {
   display: grid;
   grid-area: header;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: repeat(2, auto);
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
     'search notification-area'
@@ -151,8 +155,10 @@ header {
 .notification-area {
   display: grid;
   grid-area: notification-area;
-  grid-template-columns: max-content max-content max-content;
   grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto;
+  grid-auto-columns: repeat(3, auto);
   align-items: center;
   justify-self: end;
   gap: 8px;
@@ -270,7 +276,8 @@ main {
 
 .project-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 24px;
 }
 
